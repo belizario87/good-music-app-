@@ -12,6 +12,7 @@ button {
   background-color: inherit;
   border: none;
   color: inherit;
+  cursor: pointer;
 }
 
 #bellow-cover {
@@ -70,6 +71,7 @@ button {
   height: 3px;
   width: 100%;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 #current-progress {
@@ -80,6 +82,14 @@ button {
   border-radius: inherit;
 }
 
-#progress-container {
-  padding-bottom: 1em;
+.button-active {
+  color: rgb(0, 183, 107);
+}
+
+#time-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  font-size: smaller;
 }
