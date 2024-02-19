@@ -43,6 +43,7 @@ button {
 
 #cover {
   width: 450px;
+  border: 1px solid white;
 }
 
 #playlist-title {
@@ -69,7 +70,6 @@ button {
   height: 3px;
   width: 100%;
   border-radius: 15px;
-  margin-bottom: 1em;
 }
 
 #current-progress {
@@ -78,4 +78,8 @@ button {
   height: inherit;
   width: var(--progress);
   border-radius: inherit;
+}
+
+#progress-container {
+  padding-bottom: 1em;
 }

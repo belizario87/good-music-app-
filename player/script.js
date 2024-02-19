@@ -7,7 +7,7 @@ const play = document.getElementById("play");
 const nextBtn = document.getElementById("next");
 const previousBtn = document.getElementById("previous");
 const currentProgress = document.getElementById("current-progress");
-
+const progressContainer = document.getElementById("progress-container");
 //Musics objects
 const asYouWere = {
   id: 1,
@@ -90,9 +90,17 @@ function updateProgressBar() {
   currentProgress.style.setProperty("--progress", `${barWidth}%`);
 }
 
+function jumpTo(event) {
+  const width = progressContainer.clientWidth;
+  const clickPosition = event.offsetX;
+  const jumpToTime = (clickPosition / width) * song.duration;
+  song.currentTime = jumpToTime;
+}
+
 initializeSong();
 
 play.addEventListener("click", playPauseDecider);
 previousBtn.addEventListener("click", previousSong);
 nextBtn.addEventListener("click", nextSong);
 song.addEventListener("timeupdate", updateProgressBar);
+progressContainer.addEventListener("click", jumpTo);
