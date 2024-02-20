@@ -48,8 +48,8 @@ let index = 0;
 
 //Player Methods
 function initializeSong() {
-  cover.src = `images/covers/${sortedPlaylist[index].coverFile}`;
-  song.src = `songs/${sortedPlaylist[index].songFile}`;
+  cover.src = `/interface/images/covers/${sortedPlaylist[index].coverFile}`;
+  song.src = `/interface/songs/${sortedPlaylist[index].songFile}`;
   songName.innerText = sortedPlaylist[index].songName;
   bandName.innerText = sortedPlaylist[index].artist;
   likeButtonRender();
