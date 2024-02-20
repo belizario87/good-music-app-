@@ -30,7 +30,7 @@ const boomBapFlip = {
   liked: false,
 };
 
-const cant_hide = {
+const cantHide = {
   id: 3,
   songName: "Can't Hide",
   artist: "Otis Mackdonald",
@@ -41,7 +41,11 @@ const cant_hide = {
 let isPlaying = false;
 let isShufle = false;
 let repeatOn = false;
-const originalPlaylist = [asYouWere, boomBapFlip, cant_hide];
+const originalPlaylist = JSON.parse(localStorage.getItem("playlist")) ?? [
+  asYouWere,
+  boomBapFlip,
+  cantHide,
+];
 let sortedPlaylist = [...originalPlaylist];
 let index = 0;
 
@@ -184,6 +188,7 @@ function likedButtonClicked() {
     sortedPlaylist[index].liked = false;
   }
   likeButtonRender();
+  localStorage.setItem("playlist", JSON.stringify(originalPlaylist));
 }
 
 initializeSong();
