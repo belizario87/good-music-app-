@@ -98,7 +98,7 @@ function loadLibrary() {
       <h5 class="card-title">${songs[i].songName}</h5>
       <p>${songs[i].albumName}</p>
       <p>${songs[i].artist}</p>
-      <button class="btn btn-outline-primary" onclick="addToPlaylist(${songs[i].id})">
+      <button class="btn btn-outline-success" onclick="addToPlaylist(${songs[i].id})">
       <i class="bi bi-plus-circle"></i>
       </button>
     </div>
@@ -172,7 +172,11 @@ function updateLocalStorage() {
 }
 
 function startPlayer() {
-  location.href = "/player/";
+  if (playlist.length === 0) {
+    alert("Sua playlist esta vazia, adicione alguma musica");
+  } else {
+    location.href = "player/";
+  }
 }
 
 playlistButton.addEventListener("click", loadPlaylist);
