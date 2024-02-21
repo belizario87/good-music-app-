@@ -6,21 +6,29 @@ This is a music player application that allows you to create and manage playlist
 
 ## Screenshots
 
-home page
+home page playlist interface
 
-![image](https://github.com/belizario87/good-music-app-/assets/43473532/3d0a720a-3b6e-4e75-8ba2-909b43d4c13e)
+![image](https://github.com/belizario87/good-music-app-/assets/43473532/ecbc02df-3d43-4384-a5fd-64fdfda6fc89)
+
 
 filter music
 
-![image](https://github.com/belizario87/good-music-app-/assets/43473532/96eb372d-e567-4694-9ab7-432ef03f8226)
+![image](https://github.com/belizario87/good-music-app-/assets/43473532/f0b967f7-92f5-492a-8a5f-ff9af15562c8)
+
 
 playlist
 
-![image](https://github.com/belizario87/good-music-app-/assets/43473532/cffec231-926b-442c-8ea7-f97c4dcd6548)
+![image](https://github.com/belizario87/good-music-app-/assets/43473532/1359a906-2198-4ef8-8573-ff30723866f7)
+
+player interface
+
+![image](https://github.com/belizario87/good-music-app-/assets/43473532/f1c7e173-92b7-45d3-a421-75aa656b7257)
+
 
 data in browser local storage
 
-![image](https://github.com/belizario87/good-music-app-/assets/43473532/31a83c90-25c2-4f05-8da9-9d551735c253)
+![image](https://github.com/belizario87/good-music-app-/assets/43473532/74354d6b-054b-4d7c-abb5-caa5b5e95dd3)
+
 
 ## Technologies Used
 
